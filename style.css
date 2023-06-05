@@ -1,0 +1,1367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 0 30px;
+}
+
+/* .header  */
+
+.header {
+  height: 80px;
+  background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+}
+
+.head {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.logo-span {
+  color: #E78EA0;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.nav-list :not(:last-child) {
+  margin-right: 58px;
+}
+
+.nav-list a {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.active a {
+  color: white;
+}
+
+.nav-list-child {
+  position: relative;
+}
+
+.nav-list-child ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  width: 100%;
+  height: 3px;
+  background: #DD677F;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.8s;
+}
+
+.nav-list-child :hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-links-child {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+.social-links :not(:last-child) {
+  margin-right: 40px;
+}
+
+.discord {
+  width: 28px;
+  height: 21px;
+}
+
+.instagram {
+  width: 26px;
+  height: 26px;
+}
+
+.telegram {
+  width: 26px;
+  height: 26px;
+}
+
+/* main  */
+
+.main-container {
+  padding: 20px 0 30px 0;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profile {
+  width: 480px;
+  height: 646px;
+  background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+  border-radius: 25px;
+}
+
+.profile-gif {
+  background: url(/img/profile/avatop.gif);
+  border-radius: 25px 25px 0px 0px;
+  width: 480px;
+  height: 110px;
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-prime {
+  position: relative;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 46px;
+  top: -38px;
+}
+
+
+.profile-avatar-left {
+  border: 7px solid rgba(136, 107, 207, 0.8);
+  box-shadow: 0px 0px 24px #876BC9;
+  background: url(/img/profile/shinobu-kocho.gif);
+  width: 130px;
+  height: 130px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.profile-avatar-right {
+  margin-top: 20px;
+}
+
+.profile-nickname {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 41px;
+  color: white;
+}
+
+.faceit {
+  display: flex;
+  align-items: center;
+}
+
+.faceit-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.faceit-first-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.faceit :not(:last-child) {
+  margin-right: 4px;
+}
+
+.faceit-text {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.profile-bottons {
+  width: 480px;
+  height: 98px;
+  background: rgba(136, 107, 207, 0.8);
+  margin-top: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.button-faceit {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  background: linear-gradient(180deg, #E78EA0 0%, #DD677F 100%);
+  border-radius: 40px;
+  padding: 16px 52px;
+  gap: 4px;
+}
+
+.steam {
+  width: 26px;
+  height: 26px;
+}
+
+.button-telegram {
+  padding: 16px 52px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #DD677F;
+}
+
+.telegram-button {
+  width: 26px;
+  height: 26px;
+}
+
+.about-me {
+  padding: 20px 46px 49px 46px;
+}
+
+.about-h1 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-p {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 139.52%;
+  color: rgba(255, 255, 255, 0.50);
+}
+.profile-last-section {
+  position: absolute;
+  left: 47px;
+  top: 470px;
+}
+
+.joined {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 388px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(231, 142, 160, 0.32);
+  margin-bottom: 4px;
+}
+
+.joined-text {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: white;
+}
+
+.joined-number {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+/* player for music */
+
+
+.music-player {
+  width: 480px;
+  height: 310px;
+  background: url(/img/music-player/back.gif);
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 144px 38px 0 38px;
+  margin-bottom: 26px;
+}
+
+.player-panel {
+  justify-content: space-between;
+  width: 404px;
+  height: 136px;
+  background: rgba(85, 55, 154, 0.90);
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  padding: 34px 53px;
+}
+
+.music-text {
+  margin-right: 45px;
+}
+
+.music-h1 {
+  color: white;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 36px;
+}
+
+.music-svg {
+  width: 17px;
+  height: 18px;
+}
+
+.music-p {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.79);
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  width: 68px;
+  height: 68px;
+  background: #FFFFFF;
+  border-radius: 97px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.m_play {
+  background: url(/img/music-player/play.svg);
+  width: 68px;
+  height: 68px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.m_pause {
+  background: url(/img/music-player/pause.svg);
+  width: 68px;
+  height: 68px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.rocket-league {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+  border-radius: 25px;
+  width: 480px;
+  height: 310px;
+  padding: 24px 154px 26px 30px;
+}
+
+.rocket-league-h1 {
+  padding: 6px 20px;
+  background: linear-gradient(180deg, #E78EA0 0%, #DD677F 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+  gap: 4px;
+  margin-bottom: 21px;
+}
+
+.rocket-league-stats {
+  display: flex;
+}
+
+.rocket-league-stats-top {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 87px;
+}
+
+.rocket-league-stats.bottom {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+
+.wins {
+  margin-bottom: 4px;
+}
+
+.stats-h1 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  color: #C9C9C9;
+  margin-bottom: 4px;
+}
+
+.stats-numb {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13px 408px;
+  background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+  border-radius: 25px;
+}
+
+.play-info-h1 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+
+.made-by-me {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: white;
+}
+
+
+
+
+
+/* screen  */
+
+@media (max-width: 1100px) {
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
+  .container {
+    max-width: 694px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+
+  .nav-list {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .nav-list :not(:last-child) {
+    margin-right: 32px;
+  }
+
+  
+.nav-list-child ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 3px;
+  background: #DD677F;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.8s;
+}
+
+.nav-list-child :hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+  .social-links-child {
+    height: 25px;
+    width: 25px;
+    padding-top: 6px;
+    padding-left: 3px;
+  }
+
+  .social-links :not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .discord {
+    width: 22px;
+    height: 17px;
+  }
+
+  .instagram {
+    width: 20px;
+    height: 20px;
+  }
+
+  .telegram {
+    width: 20px;
+    height: 20px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 654px;
+    height: 646px;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+
+  .profile-gif {
+    background: url(/img/profile/avatop.gif);
+    border-radius: 25px 25px 0px 0px;
+    width: 654px;
+    height: 110px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .profile-prime {
+    position: relative;
+  }
+
+  .profile-avatar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 102px;
+    top: -38px;
+  }
+
+
+  .profile-avatar-left {
+    border: 7px solid rgba(136, 107, 207, 0.8);
+    box-shadow: 0px 0px 24px #876BC9;
+    background: url(/img/profile/shinobu-kocho.gif);
+    width: 130px;
+    height: 130px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-right: 36px;
+  }
+
+  .profile-avatar-right {
+    margin-top: 20px;
+  }
+
+  .profile-nickname {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 57px;
+  }
+
+  .faceit {
+    display: flex;
+    align-items: center;
+  }
+
+  .faceit-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .faceit-first-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .faceit :not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .faceit-text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .profile-bottons {
+    width: 654px;
+    height: 98px;
+    gap: 35px;
+  }
+
+  .steam {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .button-faceit {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .button-telegram {
+    padding: 16px 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #DD677F;
+  }
+
+  .telegram-button {
+    width: 31px;
+    height: 31px;
+  }
+
+  .about-me {
+    padding: 20px 102px 48px 102px;
+  }
+
+  .about-h1 {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .about-p {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139.52%;
+  }
+  .profile-last-section {
+    position: absolute;
+    left: 102px;
+    top: 470px;
+  }
+  
+  .joined {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(231, 142, 160, 0.32);
+    margin-bottom: 4px;
+  }
+  
+  .joined-text {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: white;
+  }
+  
+  .joined-number {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+
+  .right-column {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .music-player {
+    width: 322px;
+    height: 212px;
+    background: url(/img/music-player/back.gif);
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 16px 32px 16px;
+    margin-bottom: 0;
+  }
+
+  .player-panel {
+    width: 290px;
+    height: 90px;
+    background: rgba(85, 55, 154, 0.90);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    padding: 18px 45px;
+  }
+
+  .music-text {
+    margin-right: 44px;
+  }
+
+  .music-h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .music-svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .music-p {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .button {
+    width: 54px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 97px;
+    cursor: pointer;
+  }
+
+  .p-puase {
+    background: url(/img/music-player/pause.svg);
+    width: 54px;
+    height: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-play {
+    background: url(/img/music-player/play.svg);
+    width: 54px;
+    height: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .rocket-league {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+    width: 322px;
+    height: 212px;
+    padding: 15px 92px 32px 15px;
+  }
+
+  .rocket-league-png {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rocket-league-h1 {
+    padding: 6px 20px 6px 15px;
+    background: linear-gradient(180deg, #E78EA0 0%, #DD677F 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    gap: 4px;
+    margin-bottom: 21px;
+  }
+
+  .rocket-league-stats {
+    display: flex;
+  }
+
+  .rocket-league-stats-top {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 95px;
+  }
+
+  .rocket-league-stats.bottom {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+
+  .wins {
+    margin-bottom: 4px;
+  }
+
+  .stats-h1 {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #C9C9C9;
+    margin-bottom: 2px;
+  }
+
+  .stats-numb {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+  }
+
+  .center {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 235px;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+  }
+
+  .play-info-h1 {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 53px;
+    color: #FFFFFF;
+  }
+
+  .made-by-me {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: white;
+  }
+
+
+
+}
+
+
+@media (max-width: 700px) {
+  body {
+    height: auto;
+  }
+  
+  .container {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .head {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+
+  .social-links-child {
+    height: 30px;
+    width: 30px;
+    padding-top: 6px;
+    padding-left: 3px;
+  }
+
+  .social-links :not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .discord {
+    width: 26px;
+    height: 20px;
+  }
+
+  .instagram {
+    width: 25px;
+    height: 25px;
+  }
+
+  .telegram {
+    width: 25px;
+    height: 25px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 310px;
+    height: 423px;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+
+  .profile-gif {
+    background: url(/img/profile/avatop.gif);
+    border-radius: 25px 25px 0px 0px;
+    width: 310px;
+    height: 65px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .profile-prime {
+    position: relative;
+  }
+
+  .profile-avatar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    top: -25px;
+  }
+
+
+  .profile-avatar-left {
+    border: 4px solid rgba(136, 107, 207, 0.8);
+    box-shadow: 0px 0px 24px #876BC9;
+    background: url(/img/profile/shinobu-kocho.gif);
+    width: 94px;
+    height: 94px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+
+  .profile-avatar-right {
+    margin-top: 15px;
+  }
+
+  .profile-nickname {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .faceit {
+    display: flex;
+    align-items: center;
+  }
+
+  .faceit-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .faceit-first-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .faceit :not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .faceit-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .profile-bottons {
+    width: 310px;
+    height: 60px;
+    gap: 13px;
+    margin-top: 80px;
+  }
+
+  .steam {
+    width: 17px;
+    height: 17px;
+  }
+
+
+  .button-faceit {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 32px;
+  }
+
+  .button-telegram {
+    padding: 7px 27px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid #DD677F;
+  }
+
+  .telegram-button {
+    width: 17px;
+    height: 17px;
+  }
+
+  .about-me {
+    padding: 10px 30px 30px 30px;
+  }
+
+  .about-h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about-p {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .profile-last-section {
+    position: absolute;
+    left: 30px;
+    top: 302px;
+  }
+  
+  .joined {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(231, 142, 160, 0.32);
+    margin-bottom: 4px;
+  }
+  
+  .joined-text {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+  
+  .joined-number {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: white;
+  }
+
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .music-player {
+    width: 310px;
+    height: 212px;
+    background: url(/img/music-player/back.gif);
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px 32px 20px;
+    margin-bottom: 10px;
+  }
+
+  .player-panel {
+    width: 270px;
+    height: 90px;
+    background: rgba(85, 55, 154, 0.90);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    padding: 18px 40px;
+  }
+
+  .music-text {
+    margin-right: 34px;
+  }
+
+  .music-h1 {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .music-svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .music-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .button {
+    width: 54px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 97px;
+    cursor: pointer;
+  }
+
+  .p-puase {
+    background: url(/img/music-player/pause.svg);
+    width: 54px;
+    height: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .p-play {
+    background: url(/img/music-player/play.svg);
+    width: 54px;
+    height: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .rocket-league {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+    width: 310px;
+    height: 212px;
+    padding: 15px 86px 32px 15px;
+  }
+
+  .rocket-league-png {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rocket-league-h1 {
+    padding: 6.5px 20px 6.5px 20px;
+    background: linear-gradient(180deg, #E78EA0 0%, #DD677F 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    gap: 4px;
+    margin-bottom: 21px;
+  }
+
+  .rocket-league-stats {
+    display: flex;
+  }
+
+  .rocket-league-stats-top {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 95px;
+  }
+
+  .rocket-league-stats.bottom {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+
+  .wins {
+    margin-bottom: 4px;
+  }
+
+  .stats-h1 {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #C9C9C9;
+    margin-bottom: 2px;
+  }
+
+  .stats-numb {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+  }
+
+  .center {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 63px;
+    background: linear-gradient(180deg, rgba(109, 69, 206, 0.72) 0%, rgba(80, 50, 153, 0.83) 100%);
+    border-radius: 25px;
+  }
+
+  .play-info-h1 {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 43px;
+    line-height: 53px;
+    color: #FFFFFF;
+  }
+
+  .made-by-me {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: white;
+  }
+
+
+
+}
