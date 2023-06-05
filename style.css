@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 /* поменял */
+
 body {
   background: url(/img/background.jpg);
   background-repeat: no-repeat;
@@ -1361,7 +1362,4 @@ a {
     line-height: 19px;
     color: white;
   }
-
-
-
 }
