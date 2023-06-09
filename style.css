@@ -5,19 +5,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* поменял */
 
 body {
+  height: 100%;
+}
+
+html {
   background: url(/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
-
 
 
 .container {
@@ -26,6 +32,7 @@ a {
   margin-right: auto;
   height: 100%;
   padding: 0 30px;
+
 }
 
 /* .header  */
@@ -143,6 +150,7 @@ a {
 
 .main-container {
   padding: 20px 0 30px 0;
+  height: 100%;
 }
 
 .center {
@@ -300,6 +308,7 @@ a {
   line-height: 139.52%;
   color: rgba(255, 255, 255, 0.50);
 }
+
 .profile-last-section {
   position: absolute;
   left: 47px;
@@ -556,25 +565,25 @@ a {
     margin-right: 32px;
   }
 
-  
-.nav-list-child ::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -32px;
-  width: 100%;
-  height: 3px;
-  background: #DD677F;
-  border-radius: 5px;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.8s;
-}
 
-.nav-list-child :hover::after {
-  transform-origin: left;
-  transform: scaleX(1);
-}
+  .nav-list-child ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 3px;
+    background: #DD677F;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.8s;
+  }
+
+  .nav-list-child :hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 
   .social-links-child {
     height: 25px;
@@ -735,12 +744,13 @@ a {
     font-size: 18px;
     line-height: 139.52%;
   }
+
   .profile-last-section {
     position: absolute;
     left: 102px;
     top: 470px;
   }
-  
+
   .joined {
     display: flex;
     align-items: center;
@@ -752,7 +762,7 @@ a {
     border-bottom: 1px solid rgba(231, 142, 160, 0.32);
     margin-bottom: 4px;
   }
-  
+
   .joined-text {
     font-family: 'Kumbh Sans';
     font-style: normal;
@@ -761,7 +771,7 @@ a {
     line-height: 21px;
     color: white;
   }
-  
+
   .joined-number {
     font-family: 'Kumbh Sans';
     font-style: normal;
@@ -960,7 +970,7 @@ a {
   body {
     height: auto;
   }
-  
+
   .container {
     max-width: 350px;
     margin-left: auto;
@@ -1150,7 +1160,7 @@ a {
     left: 30px;
     top: 302px;
   }
-  
+
   .joined {
     display: flex;
     align-items: center;
@@ -1162,7 +1172,7 @@ a {
     border-bottom: 1px solid rgba(231, 142, 160, 0.32);
     margin-bottom: 4px;
   }
-  
+
   .joined-text {
     font-family: 'Kumbh Sans';
     font-style: normal;
@@ -1171,7 +1181,7 @@ a {
     line-height: 21px;
     color: white;
   }
-  
+
   .joined-number {
     font-family: 'Kumbh Sans';
     font-style: normal;
