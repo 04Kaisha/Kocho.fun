@@ -533,10 +533,15 @@ a {
 
 @media (max-width: 1100px) {
   body {
-    overflow: auto;
     height: auto;
   }
-
+  html {
+    overflow: auto;
+    background: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
   .container {
     max-width: 694px;
     margin-left: auto;
@@ -969,10 +974,14 @@ a {
 @media (max-width: 700px) {
   body {
     height: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
   }
-
+  html {
+    overflow: auto;
+    background: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
   .container {
     max-width: 350px;
     margin-left: auto;
